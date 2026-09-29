@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta name="description" content="Distribución mayorista B2B integral. Lácteos, bebidas, fiambres y almacén." />
+  <title>Distribuidora Cañada | Mayorista &amp; Logística de Frío</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+  
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <!-- Configuración Definitiva de Tailwind (Identidad Corporativa B2B) -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#0B2545",
+            "primary-container": "#06172D",
+            "on-primary": "#ffffff",
+            "secondary": "#25D366",
+            "secondary-container": "#1da851",
+            "on-secondary": "#ffffff",
+            "background": "#F8FAFC",
+            "on-background": "#0F172A",
+            "surface": "#ffffff",
+            "on-surface": "#0F172A",
+            "surface-variant": "#e2e8f0",
+            "tertiary": "#475569",
+            "surface-container-low": "#F0F5FA",
+            "surface-container-lowest": "#ffffff",
+            "outline-variant": "#cbd5e1",
+            "error": "#ef4444"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "margin-desktop": "2.5rem"
+          },
+          "fontFamily": {
+            "display-hero": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-md": ["Plus Jakarta Sans", "sans-serif"],
+            "headline-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "label-md": ["Plus Jakarta Sans", "sans-serif"],
+            "label-sm": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "display-hero": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" }],
+            "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "600" }],
+            "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary min-h-screen relative overflow-x-hidden font-body-md text-body-md pb-24">
+  <!-- Ambient Gradients -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+    <div class="absolute top-1/3 -right-32 w-80 h-80 bg-secondary/5 rounded-full blur-[110px]"></div>
+    <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-[120px]"></div>
+  </div>
+
+  <!-- Header Institucional -->
+  <header class="bg-surface/90 backdrop-blur-xl docked full-width top-0 sticky z-40 shadow-sm border-b border-outline-variant/30">
+    <div class="flex justify-between items-center w-full px-margin-mobile py-space-sm max-w-7xl mx-auto">
+      <a class="flex items-center gap-2.5 group active:scale-95 transition-transform duration-150" href="#hero">
+        <div class="w-10 h-10 rounded-xl bg-white p-1 border border-outline-variant flex items-center justify-center shadow-sm overflow-hidden flex-shrink-0">
+          <img alt="Distribuidora Cañada" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK95DYPATUlRo0xpLOYL1d-gO4V5po-esW3KaRS8xMqPYvAOgBl9IkqZmD2fykDcn0NwgHutbzOZGt3gz15ZUH35Y84BwCxLnxtU76m5jNfCQi8g6d_Cf0DfGh3jYdxd-QBYLdA_R1R11BG6qmvR94y-MHu0V_5bbXQLC8rcmdbHwMRLgn5Bx1FpFdPZBeM2HcFF9hJjfjQN2PbXu6RY6HYyTz33l7pdsPKjJa9dKMElbta_Om_fTVuJg5YrBMOLZ-NQ" />
+        </div>
+        <div class="flex flex-col">
+          <span class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight leading-none">Distribuidora Cañada</span>
+          <span class="text-label-sm font-label-sm text-tertiary font-medium tracking-wide">Distribución Mayorista</span>
+        </div>
+      </a>
+      <div class="flex items-center gap-space-xs">
+        <a aria-label="Contacto Rápido" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary active:scale-95 transition-transform hover:bg-surface-variant shadow-sm border border-outline-variant/30" href="https://wa.me/5493471352366">
+          <svg class="w-5 h-5 fill-current text-secondary" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.34 7.35 9.04 7.42 8.78 7.7C8.52 7.98 7.79 8.66 7.79 10.05C7.79 11.44 8.81 12.78 8.95 12.97C9.09 13.16 10.93 15.99 13.76 17.21C14.43 17.5 14.96 17.68 15.37 17.81C16.04 18.02 16.66 17.99 17.14 17.92C17.68 17.84 18.8 17.24 19.03 16.59C19.26 15.94 19.26 15.38 19.19 15.27C19.12 15.15 18.94 15.08 18.66 14.94C18.38 14.8 17.03 14.13 16.78 14.04C16.53 13.95 16.34 13.9 16.16 14.18C15.97 14.46 15.46 15.06 15.3 15.25C15.14 15.43 14.98 15.46 14.7 15.32C14.42 15.18 13.24 14.79 11.83 13.54C10.74 12.56 10 11.36 9.79 10.99C9.58 10.62 9.77 10.42 9.91 10.28C10.04 10.15 10.2 9.93 10.34 9.77C10.48 9.61 10.53 9.49 10.62 9.31C10.71 9.12 10.67 8.96 10.6 8.82C10.53 8.68 9.97 7.35 9.53 7.35Z"></path>
+          </svg>
+        </a>
+        <button aria-label="Abrir Menú" class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-primary active:scale-95 transition-transform hover:bg-surface-variant shadow-sm border border-outline-variant/30" id="menuTrigger">
+          <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="fixed inset-0 bg-primary-container/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawerBackdrop">
+    <nav class="flex flex-col h-full p-space-md gap-space-sm w-80 bg-surface shadow-2xl -translate-x-full transition-transform duration-300 ease-out border-r border-outline-variant/30 relative" id="drawerContent">
+      <div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-9 h-9 rounded-lg bg-white p-1 border border-outline-variant flex items-center justify-center shadow-sm">
+            <img alt="Distribuidora Cañada" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATbytq3rj2Rop7GAr0ftmvczNYAqojI3i-ON9JW--IPCD9Kg4S4rb1sy3g_0n2z67M5XnIeYFAZn0QE783AlhMSjYBRw4G-pQjRERqhAnJkMjJsHeOUMQ0JcCTeYubBNRdNdwZqpdz221cUvgTsAUIcbbWRfRVflF1Nw3qbdQyblZqQxIBS_LtG4KxefRnu37VKpBpaI7xQoV0DkgLLMc7g4N1HHERJCouzCjvmH3tLqZK9UxwWgL70lyKcyH9qnHi1w" />
+          </div>
+          <span class="text-headline-md font-headline-md font-extrabold text-primary">Cañada</span>
+        </div>
+        <button class="w-8 h-8 rounded-lg flex items-center justify-center text-tertiary hover:text-primary bg-surface-container-low" id="closeDrawer">
+          <span class="material-symbols-outlined" data-icon="close">close</span>
+        </button>
+      </div>
+      <div class="flex flex-col gap-space-xs py-space-sm flex-1">
+        <a class="flex items-center gap-space-md px-space-md py-space-sm bg-primary/5 text-primary rounded-lg font-semibold active:scale-98 transition-transform duration-150" href="#hero">
+          <span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+          <span class="text-label-lg font-label-lg">Inicio</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm text-tertiary hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors active:scale-98" href="#catalogo">
+          <span class="material-symbols-outlined" data-icon="storefront">storefront</span>
+          <span class="text-label-lg font-label-lg">Catálogo Mayorista</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm text-tertiary hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors active:scale-98" href="#cobertura">
+          <span class="material-symbols-outlined" data-icon="map">map</span>
+          <span class="text-label-lg font-label-lg">Zonas de Entrega</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm text-tertiary hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors active:scale-98" href="#marcas">
+          <span class="material-symbols-outlined" data-icon="verified">verified</span>
+          <span class="text-label-lg font-label-lg">Marcas Oficiales</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm text-tertiary hover:text-primary rounded-lg hover:bg-surface-container-low transition-colors active:scale-98" href="#faq">
+          <span class="material-symbols-outlined" data-icon="help">help</span>
+          <span class="text-label-lg font-label-lg">Preguntas Frecuentes</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-margin-mobile sm:px-margin-desktop">
+    <!-- 1. HERO SECTION -->
+    <section class="flex flex-col gap-space-md pt-space-md reveal-on-scroll" id="hero">
+      <div class="bg-surface p-space-md sm:p-space-lg rounded-3xl border border-outline-variant/40 relative overflow-hidden flex flex-col items-center sm:items-start text-center sm:text-left gap-space-md shadow-lg">
+        <div class="absolute -top-12 -left-12 w-48 h-48 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full">
+          <div class="relative group flex-shrink-0">
+            <div class="absolute -inset-1 bg-gradient-to-tr from-secondary/40 via-primary/20 to-secondary/20 rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition duration-300"></div>
+            <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-white p-2 border-2 border-white shadow-xl flex items-center justify-center overflow-hidden">
+              <img alt="Distribuidora Cañada Logo Oficial" class="w-full h-full object-contain filter drop-shadow-sm transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQKaJiwt25HatIv_ZwUe5NtQZVVaQ2g4QZ4z0IC3GqIoe6D7L_g3L_bmVwTEnzmVmnZhNU0Qrm2XnEcvldN0aoBd-G7uvfCnoT0A7_XblfTahEurhbvAOqbO4oX2Vp0kg-_P_U6JU5H1DvNAE8visOMOZNNwecAbaLNMVh9YG_e9whZYXkvb-ZJ9LiMBIR7mbKDrKj6DMEaj5swvfY_muE3hWemXHQUGAGazshZ0OPkbbP0REP4mYwEOscl3hOJ84pJg" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center sm:items-start gap-1">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+              <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+              <span class="text-label-sm font-label-sm text-primary uppercase tracking-wider font-bold">Distribución Mayorista Integral</span>
+            </div>
+            <span class="text-body-sm font-semibold text-tertiary">Sede Central: Cañada de Gómez</span>
+          </div>
+        </div>
+        <h1 class="text-display-hero-mobile md:text-display-hero text-on-surface tracking-tight mt-1">
+          Abastecimiento seguro para tu negocio.
+        </h1>
+        <p class="text-body-md text-tertiary max-w-2xl leading-relaxed">
+          Atendemos comercios, supermercados y gastronomía con entrega puntual garantizada, stock permanente y precios de fábrica en toda la región.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-space-sm w-full pt-space-xs">
+          <a class="inline-flex items-center justify-center gap-2.5 px-space-lg py-3.5 rounded-xl bg-secondary text-on-secondary font-label-lg font-bold shadow-[0_8px_20px_rgba(37,211,102,0.35)] hover:bg-secondary-container active:scale-98 transition-all duration-150" href="https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20la%20lista%20de%20precios%20mayorista">
+            <svg class="w-5 h-5 fill-current text-on-secondary flex-shrink-0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.34 7.35 9.04 7.42 8.78 7.7C8.52 7.98 7.79 8.66 7.79 10.05C7.79 11.44 8.81 12.78 8.95 12.97C9.09 13.16 10.93 15.99 13.76 17.21C14.43 17.5 14.96 17.68 15.37 17.81C16.04 18.02 16.66 17.99 17.14 17.92C17.68 17.84 18.8 17.24 19.03 16.59C19.26 15.94 19.26 15.38 19.19 15.27C19.12 15.15 18.94 15.08 18.66 14.94C18.38 14.8 17.03 14.13 16.78 14.04C16.53 13.95 16.34 13.9 16.16 14.18C15.97 14.46 15.46 15.06 15.3 15.25C15.14 15.43 14.98 15.46 14.7 15.32C14.42 15.18 13.24 14.79 11.83 13.54C10.74 12.56 10 11.36 9.79 10.99C9.58 10.62 9.77 10.42 9.91 10.28C10.04 10.15 10.2 9.93 10.34 9.77C10.48 9.61 10.53 9.49 10.62 9.31C10.71 9.12 10.67 8.96 10.6 8.82C10.53 8.68 9.97 7.35 9.53 7.35Z"></path>
+            </svg>
+            <span>Lista de Precios vía WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card (Google Maps Interactivo Solucionado) -->
+      <div class="relative mt-space-xs rounded-2xl overflow-hidden bg-surface-variant border border-outline-variant/50 aspect-[16/9] max-h-72 shadow-lg group">
+        <iframe class="absolute inset-0 w-full h-full border-0" src="https://maps.google.com/maps?q=Av.+Leandro+N.+Alem+467,+Ca%C3%B1ada+de+G%C3%B3mez,+Santa+Fe,+Argentina&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="absolute top-0 left-0 right-0 p-space-md flex items-center justify-between w-full pointer-events-none bg-gradient-to-b from-primary-container/80 to-transparent">
+          <div class="drop-shadow-md">
+            <span class="text-label-sm uppercase text-secondary font-bold tracking-wider">Depósito Central</span>
+            <p class="text-headline-sm text-white font-bold">Av. Leandro N. Alem 467</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust KPI Highlights -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col gap-1 border border-outline-variant/40 hover:border-secondary/60 transition-colors shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-label-sm text-tertiary">Alcance Regional</span>
+            <span class="material-symbols-outlined text-secondary" data-icon="route">route</span>
+          </div>
+          <span class="text-headline-md font-extrabold text-primary">21 Localidades</span>
+          <span class="text-body-sm text-tertiary">Rutas semanales programadas</span>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col gap-1 border border-outline-variant/40 hover:border-primary/60 transition-colors shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-label-sm text-tertiary">Relación Directa</span>
+            <span class="material-symbols-outlined text-primary" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+          </div>
+          <span class="text-headline-md font-extrabold text-primary">+35 Marcas</span>
+          <span class="text-body-sm text-tertiary">Directo de fábrica al comercio</span>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col gap-1 border border-outline-variant/40 hover:border-secondary/60 transition-colors shadow-sm">
+          <div class="flex items-center justify-between">
+            <span class="text-label-md text-tertiary">Confiabilidad</span>
+            <span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+          </div>
+          <span class="text-headline-md font-bold text-primary">Logística Propia</span>
+          <span class="text-body-sm text-tertiary">Cadena de frío y facturación formal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MARCAS OFICIALES -->
+    <section class="flex flex-col gap-space-md mt-12 reveal-on-scroll" id="marcas">
+      <div class="flex flex-col gap-1">
+        <div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/40 text-secondary text-label-sm font-bold hover:scale-105 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all cursor-default">
+          <span class="material-symbols-outlined text-sm drop-shadow-[0_0_8px_rgba(37,211,102,0.6)]" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+          Marcas de Confianza
+        </div>
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-primary font-bold">Marcas Oficiales</h2>
+        <p class="text-body-sm text-tertiary">Distribuidores oficiales con disponibilidad inmediata y precio directo de fábrica.</p>
+      </div>
+      
+      <!-- Brand Logos Grid (Nombres Reales Integrados) -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20SanCor', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo Sancor.png" alt="SanCor" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">SanCor</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Pritty', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/pritty logo.png" alt="Pritty" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Pritty</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Citric', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo citric.png" alt="Citric" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Citric</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20La%20Casona', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo la casona.png" alt="La Casona" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">La Casona</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Tostex', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo tostex.png" alt="Tostex" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Tostex</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Tremblay', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo tremblay.png" alt="Tremblay" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Tremblay</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Cremigal', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo cremigal.png" alt="Cremigal" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Cremigal</span>
+        </div>
+        <div class="bg-surface rounded-xl p-space-md flex flex-col items-center justify-center text-center gap-2 border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all cursor-pointer group" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Dahí', '_blank')">
+          <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border border-outline-variant/30 p-2 group-hover:scale-105 transition-transform">
+            <img src="./logos/logo dahi.png" alt="Dahí" class="w-full h-full object-contain">
+          </div>
+          <span class="text-label-sm text-primary font-bold">Dahí</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CATEGORÍAS DE PRODUCTOS -->
+    <section class="flex flex-col gap-space-md mt-12 reveal-on-scroll" id="catalogo">
+      <div class="flex justify-between items-end">
+        <div class="flex flex-col gap-1">
+          <div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/40 text-secondary text-label-sm font-bold hover:scale-105 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all cursor-default">
+            <span class="material-symbols-outlined text-sm drop-shadow-[0_0_8px_rgba(37,211,102,0.6)]" data-icon="inventory_2">inventory_2</span>
+            Catálogo Mayorista
+          </div>
+          <h2 class="text-headline-lg-mobile md:text-headline-lg text-primary font-bold">Todo lo que tu comercio necesita</h2>
+          <p class="text-body-sm text-tertiary">Líneas completas con alta rotación en góndola y entrega refrigerada continua.</p>
+        </div>
+      </div>
+      
+      <!-- Categories Grid: (Iconografía actualizada para B2B) -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Lácteos', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Lácteos</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Quesos, leches, yogures</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Bebidas', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="water_bottle">water_bottle</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Bebidas</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Gaseosas, jugos y aguas</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Fiambres', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="kebab_dining">kebab_dining</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Fiambres</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Embutidos seleccionados</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Panificados', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="bakery_dining">bakery_dining</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Panificados</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Tostadas y panes molde</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Almacén', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="kitchen">kitchen</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Almacén</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Secos y encurtidos</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Dulces', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="cookie">cookie</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Dulces</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Mermeladas y dulce de leche</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Aceites', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="opacity">opacity</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Aceites</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Girasol, oliva y vinagres</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-md rounded-2xl flex flex-col justify-between gap-space-sm border border-outline-variant/40 shadow-sm hover:border-secondary/50 hover:shadow-md transition-all group cursor-pointer" onclick="window.open('https://wa.me/5493471352366?text=Hola,%20quisiera%20solicitar%20el%20catálogo%20de%20Higiene', '_blank')">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-secondary/10 group-hover:text-secondary group-hover:border-secondary/40 group-hover:scale-105 transition-all">
+            <span class="material-symbols-outlined" data-icon="sanitizer">sanitizer</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary group-hover:text-secondary transition-colors">Higiene</h3>
+            <p class="text-body-sm text-tertiary mt-0.5">Institucional y personal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ZONA DE COBERTURA (Corregido: Placeholder y 21 Localidades Reales) -->
+    <section class="flex flex-col gap-space-md mt-12 reveal-on-scroll" id="cobertura">
+      <div class="flex flex-col gap-1">
+        <div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/40 text-secondary text-label-sm font-bold hover:scale-105 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all cursor-default">
+          <span class="material-symbols-outlined text-sm drop-shadow-[0_0_8px_rgba(37,211,102,0.6)]" data-icon="local_shipping" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+          Logística Integral
+        </div>
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-primary font-bold">Cobertura y Rutas Semanales</h2>
+        <p class="text-body-sm text-tertiary">Entregas programadas sin fallas en las 21 localidades de nuestra zona. Verificá si llegamos a tu negocio.</p>
+      </div>
+      
+      <div class="relative w-full">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-tertiary">
+          <span class="material-symbols-outlined" data-icon="search">search</span>
+        </div>
+        <!-- Placeholder estricto requerido -->
+        <input class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-surface border border-outline-variant/40 text-on-surface placeholder:text-outline focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md shadow-sm" id="localitySearch" placeholder="Busca tu localidad" type="text" />
+      </div>
+      
+      <div class="bg-surface-container-low p-space-sm px-space-md rounded-xl flex items-center gap-space-sm border-l-4 border-l-secondary">
+        <span class="material-symbols-outlined text-secondary flex-shrink-0" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <span class="text-body-sm text-primary font-medium">Reparto semanal fijo sin costo de flete en compras mínimas.</span>
+      </div>
+      
+      <!-- Las 21 localidades dictadas por la arquitectura institucional -->
+      <div class="flex flex-wrap gap-2 pt-space-xs" id="localityChips">
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm font-bold text-secondary border border-secondary/50 cursor-pointer transition-colors shadow-sm">Cañada de Gómez (Base)</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Armstrong</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Tortugas</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Montes de Oca</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Bouquet</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Villa Eloísa</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">General Roca</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Clarke</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Serodino</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Andino</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Oliveros</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Puerto Gaboto</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Aldao</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Timbúes</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Salto Grande</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Totoras</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Bustinza</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Marcos Juárez</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Leones</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Noetinger</span>
+        <span class="locality-pill px-3 py-1.5 rounded-full bg-surface text-label-sm text-tertiary border border-outline-variant/40 hover:border-secondary/50 cursor-pointer transition-colors shadow-sm">Correa</span>
+      </div>
+      <p class="hidden text-body-sm text-error font-medium" id="noResults">No se encontraron localidades bajo ese criterio. ¡Consultanos por WhatsApp para aperturas de nuevas rutas!</p>
+    </section>
+
+    <!-- 5. PROPUESTA DE VALOR -->
+    <section class="flex flex-col gap-space-md mt-12 reveal-on-scroll">
+      <div class="flex flex-col gap-1">
+        <div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/40 text-secondary text-label-sm font-bold hover:scale-105 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all cursor-default">
+          <span class="material-symbols-outlined text-sm drop-shadow-[0_0_8px_rgba(37,211,102,0.6)]" data-icon="stars" style="font-variation-settings: 'FILL' 1;">stars</span>
+          Ventaja Competitiva
+        </div>
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-primary font-bold">Por qué elegirnos como tu distribuidor</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+        <div class="bg-surface p-space-lg rounded-2xl flex flex-col gap-space-sm border border-outline-variant/40 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="local_shipping">local_shipping</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary">Logística y Flota Propia</h3>
+            <p class="text-body-sm text-tertiary mt-1">Flota moderna con recorridos rigurosos para asegurar que tu pedido llegue en tiempo y forma a tu comercio con la cadena de frío intacta.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-lg rounded-2xl flex flex-col gap-space-sm border border-outline-variant/40 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="receipt_long">receipt_long</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary">Facturación A y B</h3>
+            <p class="text-body-sm text-tertiary mt-1">Documentación fiscal transparente adaptada a tu régimen tributario para una contabilidad ordenada y deducción de impuestos.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-lg rounded-2xl flex flex-col gap-space-sm border border-outline-variant/40 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="event_repeat">event_repeat</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary">Frecuencia Fija Semanal</h3>
+            <p class="text-body-sm text-tertiary mt-1">Días específicos de entrega en tu zona para que puedas organizar la reposición de stock de forma previsible y sin imprevistos.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-space-lg rounded-2xl flex flex-col gap-space-sm border border-outline-variant/40 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-2xl" data-icon="sell">sell</span>
+          </div>
+          <div>
+            <h3 class="text-headline-sm font-bold text-primary">Venta Mayorista Directa</h3>
+            <p class="text-body-sm text-tertiary mt-1">Precios directos por bulto cerrado y promociones escalonadas por volumen de compra mensual para maximizar tus márgenes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="flex flex-col gap-space-md mt-12 reveal-on-scroll" id="faq">
+      <div class="flex flex-col gap-1">
+        <div class="inline-flex items-center gap-1.5 self-start px-3 py-1.5 rounded-full bg-secondary/10 border border-secondary/40 text-secondary text-label-sm font-bold hover:scale-105 hover:shadow-[0_0_15px_rgba(37,211,102,0.4)] transition-all cursor-default">
+          <span class="material-symbols-outlined text-sm drop-shadow-[0_0_8px_rgba(37,211,102,0.6)]" data-icon="help" style="font-variation-settings: 'FILL' 1;">help</span>
+          Resolución Inmediata
+        </div>
+        <h2 class="text-headline-lg-mobile md:text-headline-lg text-primary font-bold">Preguntas Frecuentes</h2>
+      </div>
+      <div class="flex flex-col gap-space-sm">
+        <div class="bg-surface rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm transition-colors">
+          <button class="faq-btn w-full p-space-md flex items-center justify-between text-left focus:outline-none hover:bg-surface-container-low transition-colors">
+            <span class="text-headline-sm font-semibold text-primary">¿Cuál es el monto mínimo de pedido?</span>
+            <span class="material-symbols-outlined text-tertiary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-space-md pb-space-md text-tertiary text-body-sm border-t border-outline-variant/20 pt-space-xs">
+            El monto mínimo varía levemente según el corredor de distribución, pero está diseñado para que almacenes de cercanía y pequeños gastronómicos puedan acceder al reparto sin sobrecargarse de inventario. Escribinos por WhatsApp y te indicamos el valor vigente.
+          </div>
+        </div>
+        <div class="bg-surface rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm transition-colors">
+          <button class="faq-btn w-full p-space-md flex items-center justify-between text-left focus:outline-none hover:bg-surface-container-low transition-colors">
+            <span class="text-headline-sm font-semibold text-primary">¿Qué medios de pago aceptan?</span>
+            <span class="material-symbols-outlined text-tertiary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-space-md pb-space-md text-tertiary text-body-sm border-t border-outline-variant/20 pt-space-xs">
+            Aceptamos transferencias bancarias, cheques electrónicos (eCheqs) y efectivo contra entrega. Para clientes recurrentes, evaluamos la apertura de cuenta corriente comercial tras una revisión inicial.
+          </div>
+        </div>
+        <div class="bg-surface rounded-xl overflow-hidden border border-outline-variant/40 shadow-sm transition-colors">
+          <button class="faq-btn w-full p-space-md flex items-center justify-between text-left focus:outline-none hover:bg-surface-container-low transition-colors">
+            <span class="text-headline-sm font-semibold text-primary">¿Cómo coordino los días de entrega en mi localidad?</span>
+            <span class="material-symbols-outlined text-tertiary transition-transform duration-200" data-icon="expand_more">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-space-md pb-space-md text-tertiary text-body-sm border-t border-outline-variant/20 pt-space-xs">
+            Al registrarte como cliente, te asignamos un día fijo de carga y entrega correspondiente al circuito de tu localidad para garantizar abastecimiento ininterrumpido todas las semanas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACTO & FOOTER -->
+    <section class="flex flex-col gap-space-md mt-12 mb-8 reveal-on-scroll" id="contacto">
+      <div class="bg-surface p-space-lg rounded-2xl border border-secondary/40 relative overflow-hidden flex flex-col gap-space-md shadow-xl">
+        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-xl bg-primary/5 p-1 border border-primary/20 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary text-2xl" data-icon="support_agent">support_agent</span>
+          </div>
+          <div>
+            <span class="text-label-sm text-secondary uppercase font-bold tracking-wider">Atención B2B Personalizada</span>
+            <h2 class="text-headline-md font-bold text-primary">Conectá con ventas</h2>
+          </div>
+        </div>
+        <p class="text-body-sm text-tertiary">Solicitá el alta como cliente nuevo, consulta zonas de reparto o pide la lista de precios PDF del día.</p>
+        
+        <div class="flex flex-col gap-space-sm pt-space-xs relative z-10">
+          <div class="flex items-start gap-space-sm">
+            <div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-white flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-lg" data-icon="pin_drop">pin_drop</span>
+            </div>
+            <div>
+              <span class="text-label-sm text-tertiary block">Sede Central</span>
+              <span class="text-body-md text-primary font-medium">Av. Leandro N. Alem 467, Cañada de Gómez, Santa Fe</span>
+            </div>
+          </div>
+          <div class="flex items-start gap-space-sm">
+            <div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-lg" data-icon="call">call</span>
+            </div>
+            <div>
+              <span class="text-label-sm text-tertiary block">Línea Directa (WhatsApp)</span>
+              <a class="text-body-md text-secondary font-bold hover:underline" href="https://wa.me/5493471352366">+54 9 3471 35-2366</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-space-sm">
+            <div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-white flex-shrink-0 mt-0.5">
+              <span class="material-symbols-outlined text-lg" data-icon="schedule">schedule</span>
+            </div>
+            <div>
+              <span class="text-label-sm text-tertiary block">Horarios de Atención Operativa</span>
+              <span class="text-body-md text-primary font-medium">Lunes a Viernes de 7:30 a 16:30 hs.</span>
+            </div>
+          </div>
+        </div>
+        
+        <a class="inline-flex relative z-10 items-center justify-center gap-2.5 px-space-lg py-3.5 rounded-xl bg-secondary text-on-secondary font-label-lg font-bold shadow-[0_8px_20px_rgba(37,211,102,0.35)] hover:bg-secondary-container active:scale-98 transition-all" href="https://wa.me/5493471352366?text=Hola,%20quisiera%20iniciar%20un%20pedido%20mayorista">
+          <svg class="w-5 h-5 fill-current text-on-secondary flex-shrink-0" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.34 7.35 9.04 7.42 8.78 7.7C8.52 7.98 7.79 8.66 7.79 10.05C7.79 11.44 8.81 12.78 8.95 12.97C9.09 13.16 10.93 15.99 13.76 17.21C14.43 17.5 14.96 17.68 15.37 17.81C16.04 18.02 16.66 17.99 17.14 17.92C17.68 17.84 18.8 17.24 19.03 16.59C19.26 15.94 19.26 15.38 19.19 15.27C19.12 15.15 18.94 15.08 18.66 14.94C18.38 14.8 17.03 14.13 16.78 14.04C16.53 13.95 16.34 13.9 16.16 14.18C15.97 14.46 15.46 15.06 15.3 15.25C15.14 15.43 14.98 15.46 14.7 15.32C14.42 15.18 13.24 14.79 11.83 13.54C10.74 12.56 10 11.36 9.79 10.99C9.58 10.62 9.77 10.42 9.91 10.28C10.04 10.15 10.2 9.93 10.34 9.77C10.48 9.61 10.53 9.49 10.62 9.31C10.71 9.12 10.67 8.96 10.6 8.82C10.53 8.68 9.97 7.35 9.53 7.35Z"></path>
+          </svg>
+          <span>Realizar Consulta Comercial</span>
+        </a>
+      </div>
+
+      <!-- Legal / Copyright Footer -->
+      <footer class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-space-xs text-tertiary text-body-sm">
+        <p>© 2026 Distribuidora Cañada. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-space-md text-label-sm font-bold">
+          <a class="hover:text-primary transition-colors" href="#">Aviso Legal</a>
+          <span>•</span>
+          <a class="hover:text-primary transition-colors" href="#">Términos B2B</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Floating Action Button -->
+  <aside class="fixed bottom-20 right-4 z-40">
+    <a aria-label="Chatear con un asesor comercial" class="flex items-center gap-2 pl-3.5 pr-4 py-3 rounded-full bg-secondary text-on-secondary font-label-md font-bold shadow-[0_8px_20px_rgba(37,211,102,0.45)] pulse-glow active:scale-95 transition-transform duration-150" href="https://wa.me/5493471352366?text=Hola,%20quisiera%20hacer%20una%20consulta%20comercial">
+      <svg class="w-6 h-6 fill-current text-on-secondary" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.35C9.34 7.35 9.04 7.42 8.78 7.7C8.52 7.98 7.79 8.66 7.79 10.05C7.79 11.44 8.81 12.78 8.95 12.97C9.09 13.16 10.93 15.99 13.76 17.21C14.43 17.5 14.96 17.68 15.37 17.81C16.04 18.02 16.66 17.99 17.14 17.92C17.68 17.84 18.8 17.24 19.03 16.59C19.26 15.94 19.26 15.38 19.19 15.27C19.12 15.15 18.94 15.08 18.66 14.94C18.38 14.8 17.03 14.13 16.78 14.04C16.53 13.95 16.34 13.9 16.16 14.18C15.97 14.46 15.46 15.06 15.3 15.25C15.14 15.43 14.98 15.46 14.7 15.32C14.42 15.18 13.24 14.79 11.83 13.54C10.74 12.56 10 11.36 9.79 10.99C9.58 10.62 9.77 10.42 9.91 10.28C10.04 10.15 10.2 9.93 10.34 9.77C10.48 9.61 10.53 9.49 10.62 9.31C10.71 9.12 10.67 8.96 10.6 8.82C10.53 8.68 9.97 7.35 9.53 7.35Z"></path>
+      </svg>
+      <span class="hidden sm:inline">Hablar con un asesor</span>
+      <span class="sm:hidden">WhatsApp</span>
+    </a>
+  </aside>
+
+  <!-- Bottom Nav Bar Mobile (Responsive Indicator fixed JS target dependencies) -->
+  <nav id="bottomNav" class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-sm py-space-xs border-t border-outline-variant/30 bg-surface/90 backdrop-blur-2xl shadow-[0_-8px_24px_rgba(0,0,0,0.1)] translate-y-full transition-transform duration-300">
+    <a class="nav-item flex flex-col items-center justify-center text-tertiary active:scale-95 transition-all duration-150" href="#catalogo" data-target="catalogo">
+      <span class="material-symbols-outlined text-[20px]" data-icon="inventory_2">inventory_2</span>
+      <span class="text-label-sm">Catálogo</span>
+    </a>
+    <a class="nav-item flex flex-col items-center justify-center text-tertiary active:scale-95 transition-all duration-150" href="#cobertura" data-target="cobertura">
+      <span class="material-symbols-outlined text-[20px]" data-icon="local_shipping">local_shipping</span>
+      <span class="text-label-sm">Cobertura</span>
+    </a>
+    <a class="nav-item flex flex-col items-center justify-center text-tertiary active:scale-95 transition-all duration-150" href="#marcas" data-target="marcas">
+      <span class="material-symbols-outlined text-[20px]" data-icon="verified">verified</span>
+      <span class="text-label-sm">Marcas</span>
+    </a>
+    <a class="nav-item flex flex-col items-center justify-center text-tertiary active:scale-95 transition-all duration-150" href="#contacto" data-target="contacto">
+      <span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+      <span class="text-label-sm">Contacto</span>
+    </a>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
